@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://kit.fontawesome.com/807d52ca14.js" crossorigin="anonymous"></script>
     <style>
         .login-container{
             display: flex;
             justify-content: center;
-            
+            margin-top: 50px;
         }
         .login-form{
             display: flex;
@@ -28,9 +29,24 @@
             font-weight: 700;
             background-color: goldenrod;
         }
+        nav a{
+            text-decoration: none;
+            margin-right: 10px;
+            color: #414242;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Inventory</a>
+            <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </nav>
+    </header>
     <section class="login-container">
         <form class="login-form">
             <h3>Please Login</h3>
