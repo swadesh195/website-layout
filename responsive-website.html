@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid plum;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1{
+            /* font-size: 3em; */
+            font-size: 10vh;
+        }
+        .tiger img{
+            width: 100%;
+        }
+        .container-two{
+            display: flex;
+        }
+        .container-two .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container-two{
+                flex-direction: column;
+            }
+            .container-two .split{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My reponsive website</h1>
+    </section>
+    <section class="tiger">
+        <h3>Tigers</h3>
+        <img src="images/tigers.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tigers.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 
+        1. Viewport meta tag
+        2. CSS Relative unit
+        3. Responsive image (fluid)
+        4. Body Max width
+     -->
+</body>
+</html>
